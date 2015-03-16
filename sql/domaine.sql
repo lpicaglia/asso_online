@@ -1,0 +1,32 @@
+CREATE TABLE domaine(id_domaine INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+					 lib_domaine VARCHAR(100));
+
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (1, "ACTIVITÉS POLITIQUES");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (2, "CLUBS, CERCLES DE RÉFLEXION");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (3, "DÉFENSE DE DROITS FONDAMENTAUX, ACTIVITÉS CIVIQUES");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (4, "JUSTICE");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (5, "INFORMATION COMMUNICATION");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (6, "CULTURE, PRATIQUES D'ACTIVITÉS ARTISTIQUES, PRATIQUES CULTURELLES");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (7, "CLUBS DE LOISIRS, RELATIONS");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (8, "ACTION SOCIOCULTURELLE");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (9, "PRÉSERVATION DU PATRIMOINE");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (10, "SPORTS, ACTIVITÉS DE PLEIN AIR");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (11, "CHASSE PÊCHE");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (12, "AMICALES, GROUPEMENTS AFFINITAIRES, GROUPEMENTS D'ENTRAIDE (HORS DÉFENSE DE DROITS FONDAMENTAUX)");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (13, "ÉDUCATION FORMATION");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (14, "RECHERCHE");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (15, "SANTÉ");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (16, "SERVICES ET ÉTABLISSEMENTS MÉDICO-SOCIAUX");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (17, "INTERVENTIONS SOCIALES");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (18, "ASSOCIATIONS CARITATIVES, HUMANITAIRES, AIDE AU DÉVELOPPEMENT, DÉVELOPPEMENT DU BÉNÉVOLAT");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (19, "SERVICES FAMILIAUX, SERVICES AUX PERSONNES ÂGÉES");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (20, "CONDUITE D'ACTIVITÉS ÉCONOMIQUES");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (21, "REPRÉSENTATION, PROMOTION ET DÉFENSE D'INTÉRÊTS ÉCONOMIQUES");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (22, "ENVIRONNEMENT, CADRE DE VIE");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (23, "AIDE À L'EMPLOI, DÉVELOPPEMENT LOCAL, PROMOTION DE SOLIDARITÉS ÉCONOMIQUES, VIE LOCALE");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (24, "LOGEMENT");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (25, "TOURISME");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (26, "SÉCURITÉ, PROTECTION CIVILE");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (27, "ARMÉE (DONT PRÉPARATION MILITAIRE, MÉDAILLES), ANCIENS COMBATTANTS");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (28, "ACTIVITÉS RELIGIEUSES, SPIRITUELLES OU PHILOSOPHIQUES");
+INSERT INTO domaine(id_domaine, lib_domaine) VALUES (29, "DOMAINES DIVERS, DOMAINES DE NOMENCLATURE SITADELE À RECLASSER");
