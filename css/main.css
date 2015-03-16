@@ -95,6 +95,26 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+ * Initialisation personnalisée
+ */
+
+html{
+  background-color: white;
+}
+
+header, body{
+  background-color: whitesmoke;
+}
+
+.container{
+  /*0adding-top: 75px;*/
+}
+
+/*
+ * Personnalisation de la navbar
+ */
+
 .navbar-custom {
   background-color: #ffa000;
   border-color: #de8b00;
@@ -210,17 +230,16 @@ textarea {
   color: #c0c0c0;
 }
 
-body{
-  background-color: whitesmoke;
-}
-
 .navbar-custom h2{
   margin-top: 5px;
 }
 
+/*
+ * Personnalisation du jumbotron
+ */
+
 .container .jumbotron,.container-fluid .jumbotron{
   padding: 30px;
-  /*background-color: transparent;*/
 }
 
 .jumbotron h3{
@@ -237,7 +256,30 @@ body{
   margin-bottom: 20px;
 } 
 
+/*
+ * Personnalisation du footer
+ */
 
+.footer{
+  border-top:1px solid #ddd;
+  background-color: white;
+
+  padding-top: 20px;
+  padding-bottom: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.footer .container{
+  padding-top: 0;
+}
+
+.footer .container table{
+  border: 0 none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 300px;
+}
 
 /* ==========================================================================
    Helper classes

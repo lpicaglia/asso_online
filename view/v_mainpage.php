@@ -14,10 +14,11 @@
 
     <body>
 
+        <header>
+            <?php require_once("view/v_topbar.php"); ?>
+        </header>
 
         <div class="container">
-            <?php require_once("view/v_topbar.php"); ?>
-            
             <div class="row">
                 
                 <?php
@@ -28,6 +29,11 @@
 
             </div>
         </div>
+
+        <footer class="footer">
+            <?php require_once("view/v_footer.php"); ?>
+        </footer>
+
         <script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>

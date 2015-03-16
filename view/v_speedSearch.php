@@ -6,7 +6,7 @@
 		<div class="panel-body">
 			<form action="#" method="post">
 				<div class="form-group">
-					<input type="text" class="form-control input" placeholder="Tape un nom/domaine d'asso"/>
+					<input type="text" class="form-control input" placeholder="Nom ou activité"/>
 				</div>
 						
 				<div class="form-group">
