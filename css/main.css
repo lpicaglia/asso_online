@@ -107,15 +107,17 @@ header, body{
   background-color: whitesmoke;
 }
 
+/*
 .container{
-  /*0adding-top: 75px;*/
+  padding-top: 75px;
 }
+*/
 
 /*
  * Personnalisation de la navbar
  */
 
-.navbar-custom {
+/*.navbar-custom {
   background-color: #ffa000;
   border-color: #de8b00;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffb333), to(#ffa000));
@@ -228,10 +230,12 @@ header, body{
 }
 .navbar-custom .navbar-link:hover {
   color: #c0c0c0;
-}
+}*/
 
-.navbar-custom h2{
-  margin-top: 5px;
+.navbar-inner{
+  height: 100px;
+  background-image: url(../img/panoBdx.jpg);
+  background-size: 100% 100%;
 }
 
 /*
@@ -279,6 +283,14 @@ header, body{
   border-collapse: collapse;
   border-spacing: 0;
   width: 300px;
+}
+
+/*
+ * Centrage de bouton
+ */
+
+.centreBtn{
+  text-align: center;
 }
 
 /* ==========================================================================

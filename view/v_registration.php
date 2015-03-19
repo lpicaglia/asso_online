@@ -17,7 +17,7 @@
 					<input type="email" class="form-control input" name="confirmMail" placeholder="Confirmer l'adresse mail"/>
 				</div>
 
-				<div class="form-group">
+				<div class="form-group centreBtn">
 					<button class="btn btn-success" type="submit">Inscription</button>
 				</div>
 			</form>
