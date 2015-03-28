@@ -5,7 +5,8 @@
 	$themes 	= array();
 	$views 		= array();
 
-	$domaines 	= getDomaine();
+	$domaines 	= getDomaines();
+	$themes		= getThemes();
 
 	$views[] = "form_registration";
 	$views[] = "speedSearch";
