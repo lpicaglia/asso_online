@@ -1,4 +1,5 @@
 CREATE TABLE association(id_asso INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+				   		 nom_asso VARCHAR(50) NOT NULL,
 				   		 mail_asso VARCHAR(50) NOT NULL,
 				   		 mdp_asso CHAR(32) NOT NULL,
 				   		 crea_cpt_asso TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

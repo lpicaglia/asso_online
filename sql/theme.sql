@@ -297,3 +297,7 @@ INSERT INTO theme(id_theme, lib_theme, id_domaine) VALUES (266, "sécurité et s
 
 INSERT INTO theme(id_theme, lib_theme, id_domaine) VALUES (267, "anciens combattants", 27);
 INSERT INTO theme(id_theme, lib_theme, id_domaine) VALUES (268, "associations de militaires, amicales, associations de conscrits", 27);
+
+INSERT INTO theme(id_theme, lib_theme, id_domaine) VALUES (269, "activités religieuses, spirituelles ou philosophiques", 28);
+
+INSERT INTO theme(id_theme, lib_theme, id_domaine) VALUES (270, "domaines divers, domaines de nomenclature sitadele à reclasser", 29);

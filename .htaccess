@@ -350,6 +350,7 @@ AddDefaultCharset utf-8
     # (4)
     # RewriteBase /
     RewriteRule ^registration$ index.php?controller=registration [L]
+    RewriteRule ^valid_registration$ index.php?controller=valid_registration [L]
     RewriteRule ^search$ index.php?controller=search [L]
     RewriteRule ^connexion$ index.php?controller=connect [L]
     # (5)
