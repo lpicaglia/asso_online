@@ -4,11 +4,11 @@
 
 			<div class="row row_registration">
 				<div class="col-md-3 col-md-offset-3">
-					<img src="img/unknown.png" class="img-thumbnail" alt="Inconnu" width="150" height="150"/>
+					<img src="img/unknown.png" id="img_logo" name="img_logo" class="img-thumbnail" alt="Inconnu" width="150" height="150"/>
 				</div>
 				<div class="col-md-6">
 					<label>Importer une image représentative de votre association</label>
-					<input type="file" name="logo"/>
+					<input type="file" id="logo" name="logo"/>
 				</div>
 			</div>
 

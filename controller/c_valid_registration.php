@@ -9,13 +9,14 @@
 			
 			$form[] = $_POST['name'];
 			$form[] = $_POST['mail'];
-			$form[] = $_POST['pwd'];
+			$form[] = md5($_POST['pwd']);
 			$form[] = $_POST['adresse'];
 			$form[] = $_POST['cplt_adresse'];
 			$form[] = $_POST['cp'];
 			$form[] = $_POST['ville'];
 			$form[] = $_POST['tel'];
 			$form[] = $_POST['desc'];
+			$form[] = $_POST['img_logo'];
 			$form[] = $_POST['facebook'];
 			$form[] = $_POST['twitter'];
 			$form[] = $_POST['link'];
@@ -23,7 +24,6 @@
 
 			createAccount($form);
 			$views[] = "valid_registration";
-
 		}
 		else{
 			$views[] = "error_registration";

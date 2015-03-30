@@ -14,7 +14,7 @@
 				</div>
 					
 				<div class="form-group">
-					<input type="email" class="form-control input" name="confirmMail" placeholder="Confirmer l'adresse mail"/>
+					<input type="email" class="form-control input" name="confirmMail" placeholder="Confirmer l'adresse mail" />
 				</div>
 
 				<div class="form-group centreBtn">
