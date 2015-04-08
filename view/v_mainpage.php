@@ -10,6 +10,11 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
     </head>
 
     <body>
@@ -32,11 +37,6 @@
 
         <footer class="footer">
             <?php require_once("view/v_footer.php"); ?>
-        </footer>
-
-        <script src="js/jquery-1.11.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        </footer>       
     </body>
 </html>

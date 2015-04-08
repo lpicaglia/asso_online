@@ -1,5 +1,5 @@
 <nav class="navbar navbar-inner">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="navbar-right">
 			<?php
 			if (isset($_SESSION)) {

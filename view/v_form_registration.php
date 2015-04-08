@@ -1,16 +1,30 @@
+<link rel="stylesheet" href="css/fileinput.min.css" />
+
+<script src="js/fileinput.min.js"></script>
+<script src="js/fileinput_locale_fr.js"></script>
+
 <div class="col-md-9">
-	<form action="valid_registration" method="post">		
+	<form action="valid_registration" method="post" id="form_registration" data-toggle="validator">		
 		<div  class="form-group">
 
 			<div class="row row_registration">
-				<div class="col-md-3 col-md-offset-3">
-					<img src="img/unknown.png" id="img_logo" name="img_logo" class="img-thumbnail" alt="Inconnu" width="150" height="150"/>
-				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 col-md-offset-3">
 					<label>Importer une image représentative de votre association</label>
-					<input type="file" id="logo" name="logo"/>
+					<input type="file" class="file" id="logo" name="logo" data-show-upload="false" data-show-remove="false"/>
 				</div>
 			</div>
+
+			<script type="text/javascript">
+				
+				$("#logo").fileinput({
+					initialPreview: [
+						"<img src='img/unknown.png' class='file-preview-image' alt='Unknown' title='Unknown'>"
+					],
+					overwriteInitial: true,
+					initialCaption: "Sélectionner une image"
+				});
+
+			</script>
 
 			<p><i>Identification</i></p>
 			<hr />
@@ -18,28 +32,28 @@
 			<div class="row row_registration">
 				<div class="col-md-12 col-md-offset-3">
 					<label for="name">Nom de l'association *</label>
-					<input type="text" class="form-control input input_registration" id="name" name="name" placeholder="Nom" value=<?php echo '"'.$name.'"'; ?>/>
+					<input type="text" class="form-control input input_registration" id="name" name="name" placeholder="Nom" value=<?php echo '"'.$name.'"'; ?> required/>
 				</div>
 			</div>
 
 			<div class="row row_registration">
 				<div class="col-md-12 col-md-offset-3">
 					<label for="mail">Adresse mail (sert également d'identifiant à la connexion) *</label>
-					<input type="email" class="form-control input input_registration" id="mail" name="mail" placeholder="Mail" value=<?php echo '"'.$mail.'"'; ?>/>
+					<input type="email" class="form-control input input_registration" id="mail" name="mail" placeholder="Mail" value=<?php echo '"'.$mail.'"'; ?> required/>
 				</div>
 			</div>
 			
 			<div class="row row_registration">
 				<div class="col-md-12 col-md-offset-3">
 					<label for="pwd">Mot de passe de connexion *</label>
-					<input type="password" class="form-control input input_registration" id="pwd" name="pwd" placeholder="Mot de passe"/>
+					<input type="password" class="form-control input input_registration" id="pwd" name="pwd" placeholder="Mot de passe" required/>
 				</div>
 			</div>
 
 			<div class="row row_registration">
 				<div class="col-md-12 col-md-offset-3">
 					<label for="pwd2">Confirmation du mot de passe *</label>
-					<input type="password" class="form-control input input_registration" id="pwd2" name="pwd2" placeholder="Confirmation"/>
+					<input type="password" class="form-control input input_registration" id="pwd2" name="pwd2" placeholder="Confirmation" required/>
 				</div>
 			</div>
 
@@ -63,7 +77,7 @@
 			<div class="row row_registration">
 				<div class="col-md-12 col-md-offset-3">
 					<label for="cp">Code postale</label>
-					<input type="text" class="form-control input input_registration" id="cp" name="cp" placeholder="Code postale"/>
+					<input type="text" class="form-control input input_registration" id="cp" name="cp" placeholder="Code postale" pattern="[0-9]{5}"/>
 				</div>
 			</div>
 		
@@ -124,7 +138,8 @@
 
 			<div class="row row_registration">
 				<div class="col-md-12 col-md-offset-3">
-					<textarea class="form-control input_registration" name="desc" placeholder="Description de l'asso" rows="4"></textarea>
+					<textarea class="form-control input_registration" id="desc" name="desc" placeholder="Description de l'asso" rows="4"></textarea>
+					(Reste : <span id="maxlength">500</span> caractères)
 				</div>
 			</div>
 
@@ -164,3 +179,7 @@
 		</div>
 	</form>
 </div>
+
+<script>
+	$("#theme").chained("#domaine");
+</script>

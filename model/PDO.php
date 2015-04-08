@@ -1,18 +1,14 @@
 <?php
 class PdoSio{  
-  	private static $serveur='mysql:';
-  	private static $bdd='';   		
-  	private static $user='';    		
-  	private static $mdp='';	
     private static $myPdo=null;
     private static $myPdoSio=null;
     
     private function __construct(){
         $config['db'] = array( 
-            'host' => 'localhost',
-            'username' => 'root',
-            'password' => 'root',
-            'dbname' => 'asso_online'
+            'host' => 'localhost', 
+            'username' => 'root',      
+            'password' => 'root',        
+            'dbname' => 'asso_online'         
         );
         try {
             PdoSio::$myPdo = new PDO('mysql:host='. $config['db']['host'] .';dbname='. $config['db']['dbname'], $config['db']['username'], $config['db']['password']);

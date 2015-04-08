@@ -1,4 +1,19 @@
-// Lien entre les listes déroulantes domaine et thème
+//=======================================================================
+// v_registration
+//=======================================================================
+
+/*
+if($("mail") == $("confirmMail")){
+	$("sub_inscription").removeAttr('disabled');
+}
+*/
+
+
+//=======================================================================
+// v_form_registration
+//=======================================================================
+
+/*
 $("#theme").chained("#domaine"); 
 
 function readURL(input) {
@@ -16,4 +31,4 @@ function readURL(input) {
 
 $("#logo").change(function(){
     readURL(this);
-});
+});*/
