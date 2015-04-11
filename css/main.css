@@ -177,14 +177,6 @@ header, body{
   text-align: center;
 }
 
-/*
- * Mise en forme du formulaire d'inscription
- */
-
- .row_registration{
-  margin-bottom: 20px;
- }
-
 .input_registration{
   width: 50%;
 }
