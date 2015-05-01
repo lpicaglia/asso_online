@@ -2,9 +2,21 @@
 	require_once('model/PDO.php');
 
 	function connexion($username, $password){
+		$val = array();
+
 		$pdo = PdoSio::getPdoSio();
-		$request = "SELECT COUNT(*) FROM association WHERE mail_asso ='".$username."' AND pwd_asso = '".md5($password)."';";
-		$res = $pdo->selectRequest($request);
-		return intval($res[0]['COUNT(*)'])>0 ? true : false;
+		$request = "SELECT *
+					FROM association 
+					WHERE mail_asso ='".$username."' AND mdp_asso = '".md5($password)."';";
+		$resultats = $pdo->selectRequest($request);
+		
+		if(!empty($resultats)){
+		    $val = $resultats[0];
+			return $val;
+		}
+		else{
+			return false;
+		}
 	}
+
 ?>

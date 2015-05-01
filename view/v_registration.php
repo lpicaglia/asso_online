@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="css/bootstrapValidator.min.css">
 <script src="js/bootstrapValidator.min.js"></script>
+<script src="js/fr_FR.js"></script>
 
 <div class="col-md-3">
 	<div class="panel panel-default">
@@ -20,8 +21,8 @@
 					<input type="email" class="form-control" id="confirmMail" name="confirmMail" placeholder="Confirmer l'adresse mail" required/>
 				</div>
 
-				<div class="form-group centreBtn">
-					<button class="btn btn-success" type="submit" >Inscription</button>
+				<div class="form-group" align="center">
+					<button class="btn btn-success" type="submit" align="center" disabled>Inscription</button>
 				</div>
 			</form>
 		</div>
@@ -43,33 +44,34 @@
 	            invalid: 'glyphicon glyphicon-remove',
 	            validating: 'glyphicon glyphicon-refresh'
 	        },
+	        locale: 'fr_FR',
 	        fields: {
 	            name: {
 	                validators: {
 	                    notEmpty: {
-	                        message: 'Veuillez saisir un nom'
+	                        message: 'Saisis un nom'
 	                    },
 	                    stringLength: {
 	                        max: 50,
-	                        message: 'Le nom ne doit pas faire plus de 50 caractères'
+	                        message: 'Maximum 50 caractères'
 	                    }
 	                }
 	            },
 	            mail: {
 	                validators: {
 	                    notEmpty: {
-	                        message: 'Veuillez saisir une adresse mail valide'
+	                        message: 'Saisis une adresse mail'
 	                    },
 	                }
 	            },
 	            confirmMail: {
 	                validators: {
 	                    notEmpty: {
-	                        message: 'Veuillez saisir une adresse mail valide'
+	                        message: 'Confirme ton adresse mail'
 	                    },
 	                    identical: {
 	                    	field: 'mail',
-	                    	message: 'Adresse email différente'
+	                    	message: 'Confirmation non valide'
 	                    }
 	                }
 	            }

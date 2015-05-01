@@ -3,27 +3,23 @@
 
 <script src="js/fileinput.min.js"></script>
 <script src="js/fileinput_locale_fr.js"></script>
+
 <script src="js/bootstrapValidator.min.js"></script>
+<script src="js/fr_FR.js"></script>
 
 <div class="col-md-9">
-	<form action="valid_registration" method="post" id="form_registration">		
+	<form action="valid_registration" method="post" id="form_registration" enctype="multipart/form-data">		
 
 			<div class="form-group registration col-md-6 col-md-offset-3">
 				<label>Importer une image représentative de votre association</label>
-				<input type="file" class="file" id="logo" name="logo" data-show-upload="false" data-show-remove="false"/>
+				<input 	id 					= "logo" 
+						name 				= "logo" 
+						type 				= "file" 
+						class 				= "file"  
+						data-show-upload	= "false" 
+						data-show-remove	= "false"
+						accept				= "image/*"/>
 			</div>
-
-			<script type="text/javascript">
-				
-				$("#logo").fileinput({
-					initialPreview: [
-						"<img src='img/unknown.png' class='file-preview-image' alt='Unknown' title='Unknown'>"
-					],
-					overwriteInitial: true,
-					initialCaption: "Sélectionner une image"
-				});
-
-			</script>
 
 			<div class="col-md-12">
 				<i>Identification</i><hr />
@@ -31,22 +27,45 @@
 
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="name">Nom de l'association *</label>
-				<input type="text" class="form-control input input_registration" id="name" name="name" placeholder="Nom" value=<?php echo '"'.$name.'"'; ?> required/>
+				<input id 		 	= "name"
+					   name			= "name" 
+					   type			= "text"
+					   class 		= "form-control input input_registration" 
+					   placeholder 	= "Nom" 
+					   value 		= <?php echo '"'.$name.'"'; ?> 
+					   maxlength 	= "50" 
+					   required/>
 			</div>
 
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="mail">Adresse mail (sert également d'identifiant à la connexion) *</label>
-				<input type="email" class="form-control input input_registration" id="mail" name="mail" placeholder="Mail" value=<?php echo '"'.$mail.'"'; ?> required/>
+				<input id 			= "mail" 
+					   name 		= "mail" 
+					   type 		= "email"
+					   class 		= "form-control input input_registration" 
+					   placeholder 	= "Mail" 
+					   value 		= <?php echo '"'.$mail.'"'; ?> 
+					   required/>
 			</div>
 			
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="pwd">Mot de passe de connexion *</label>
-				<input type="password" class="form-control input input_registration" id="pwd" name="pwd" placeholder="Mot de passe" required/>
+				<input 	id 			= "pwd" 
+						name 		= "pwd" 
+						type 		= "password"
+						class 		= "form-control input input_registration" 
+						placeholder	= "Mot de passe" 
+						required/>
 			</div>
 
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="confirmPwd">Confirmation du mot de passe *</label>
-				<input type="password" class="form-control input input_registration" id="confirmPwd" name="confirmPwd" placeholder="Confirmation" required/>
+				<input 	id 			= "confirmPwd" 
+						name 		= "confirmPwd" 
+						type 		= "password"
+						class 		= "form-control input input_registration" 
+						placeholder	= "Confirmation" 
+						required/>
 			</div>
 
 			<div class="col-md-12">
@@ -55,36 +74,56 @@
 
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="adr">Adresse de l'association</label>
-				<input type="text" class="form-control input input_registration"  name="adresse" placeholder="Adresse"/>
+				<input 	id  		= "adr"
+						name 		= "adr"
+						type 		= "text" 
+						class 		= "form-control input input_registration" 
+						placeholder	= "Adresse"/>
 			</div>
 
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="adr2">Complément d'dresse</label>
-				<input type="text" class="form-control input input_registration" id="adr2" name="cplt_adresse" placeholder="Complément d'adresse"/>
+				<input 	id 			= "adr2" 
+						name 		= "adr2" 
+						type 		= "text" 
+						class 		= "form-control input input_registration" 
+						placeholder	= "Complément d'adresse"/>
 			</div>
 
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="cp">Code postale</label>
-				<input type="text" class="form-control input input_registration" id="cp" name="cp" placeholder="Code postale" pattern="[0-9]{5}"/>
+				<input 	id 			= "cp" 
+						name 		= "cp"
+						type 		= "text" 
+						class 		= "form-control input input_registration" 
+						placeholder	= "Code postale"/>
 			</div>
 		
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="ville">Ville</label>
-				<input type="text" class="form-control input input_registration" id="ville" name="ville" placeholder="Ville"/>
+				<input 	id 			= "ville" 
+						name 		= "ville" 
+						type 		= "text" 
+						class 		= "form-control input input_registration" 
+						placeholder = "Ville"/>
 			</div>
 			
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="tel">Téléphone</label>
-				<input type="text" class="form-control input input_registration" id="tel" name="tel" placeholder="Téléphone"/>
+				<input 	id 			= "tel" 
+						name 		= "tel" 
+						type 		= "text" 
+						class 		= "form-control input input_registration" 
+						placeholder	= "Téléphone"/>
 			</div>
 
 			<div class="col-md-12">
 				<i>L'association</i><hr />
 			</div>
 
-			<div class="form-group">
-				<div class="col-md-6" align="center">
-					<select id="domaine" name="domaine" style="width: 250px;">
+			<div>
+				<div class="col-md-6 form-group" align="center">
+					<select id="domaine" name="domaine" style="width: 250px;" required>
 						<option value="">-- Domaines --</option>
 					<?php
 
@@ -101,8 +140,8 @@
 					</select> *
 				</div>
 
-				<div class="col-md-6" align="center">
-					<select id="theme" name="theme" style="width: 250px;">
+				<div class="col-md-6 form-group" align="center">
+					<select id="theme" name="theme" style="width: 250px;" required>
 						<option value="">-- Thèmes --</option>
 					<?php
 
@@ -121,8 +160,13 @@
 			</div>
 
 			<div class="form-group col-md-12 col-md-offset-3">
-				<textarea class="form-control input_registration" id="desc" name="desc" placeholder="Description de l'asso" rows="4" maxlength="500"></textarea>
-				<span>(Max. 500 caractères)</span>
+				<label for="desc">Expliquez, en quelques mot, le but de votre association</label>
+				<textarea 	id 			="desc" 
+							name 		="desc" 
+							class 		="form-control input_registration" 
+							placeholder	="Description de l'asso" 
+							rows="4"></textarea>
+				<span class="help-block">(Max. 500 caractères)</span>
 			</div>
 
 			<div class="col-md-12">
@@ -131,17 +175,29 @@
 
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="fb">Lien vers la page facebook</label>
-				<input type="text" class="form-control input input_registration" id="fb" name="facebook" placeholder="Facebook"/>
+				<input 	id  		= "fb"
+						name 		= "facebook"
+						type 		= "url" 
+						class 		= "form-control input input_registration"  
+						placeholder	= "Facebook"/>
 			</div>
 
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="twt">Lien vers la page twitter</label>
-				<input type="text" class="form-control input input_registration" id="twt" name="twitter" placeholder="Twitter"/>
+				<input 	id 			= "twt"
+						name		= "twitter"
+						type		= "url" 
+						class 		= "form-control input input_registration" 
+						placeholder	= "Twitter"/>
 			</div>
 
 			<div class="form-group col-md-12 col-md-offset-3">
 				<label for="twt">Autre lien</label>
-				<input type="text" class="form-control input input_registration" id="link" name="link" placeholder="Lien"/>
+				<input 	id 			= "link"
+						name 		= "link"
+						type 		= "url" 
+						class 		= "form-control input input_registration" 
+						placeholder	= "Lien"/>
 			</div>
 
 			<div class="col-md-12">
@@ -162,6 +218,18 @@
 <script>
 
 // =================================================================================
+// Aperçu d'image
+// =================================================================================
+
+	$("#logo").fileinput({
+		initialPreview: [
+			"<img src='img/uploads/unknown.png' class='file-preview-image' alt='Unknown' title='Unknown'>"
+		],
+		overwriteInitial: true,
+		initialCaption: "Sélectionne une image"
+	});
+
+// =================================================================================
 // Chainega des listes déroulantes
 // =================================================================================
 
@@ -177,41 +245,73 @@
 	        framework: 'bootstrap',
 	   		icon: {
 	            valid: 'glyphicon glyphicon-ok',
-	            invalid: 'glyphicon glyphicon-remove',
-	            validating: 'glyphicon glyphicon-refresh'
+	            invalid: 'glyphicon glyphicon-remove'
 	        },
+	        locale: 'fr_FR',
 	        fields: {
 	            name: {
 	                validators: {
 	                    notEmpty: {
-	                        message: 'Veuillez saisir un nom'
+	                        message: 'Saisis un nom'
 	                    },
 	                    stringLength: {
 	                        max: 50,
-	                        message: 'Le nom ne doit pas faire plus de 50 caractères'
+	                        message: 'Maximum 50 caractères'
 	                    }
 	                }
 	            },
 	            mail: {
 	                validators: {
 	                    notEmpty: {
-	                        message: 'Veuillez saisir une adresse mail valide'
+	                        message: 'Saisis une adresse mail'
 	                    },
+	                }
+	            },
+	            pwd: {
+	                validators: {
+	                    notEmpty: {
+	                        message: 'Saisis un mot de passe'
+	                    },
+	                    stringLength: {
+	                        min: 6,
+	                        message: 'Au moins 6 caractères'
+	                    }
 	                }
 	            },
 	            confirmPwd: {
 	                validators: {
 	                    notEmpty: {
-	                        message: 'Veuillez saisir un mot de passe'
+	                        message: 'Confirme ton mot de passe'
 	                    },
 	                    identical: {
 	                    	field: 'pwd',
-	                    	message: 'Mot de passes différents'
+	                    	message: 'Confirmation non valide'
+	                    }
+	                }
+	            },
+	            tel: {
+	                validators: {
+	                    stringLength: {
+	                        min: 10,
+	                        message: 'Téléphone incorrect (ex. : 0553535353)'
+	                    }
+	                }
+	            },
+	            domaine: {
+	                validators: {
+	                    notEmpty: {
+	                        message: 'Sélectionne un domaine'
+	                    }
+	                }
+	            },
+	            theme: {
+	                validators: {
+	                    notEmpty: {
+	                        message: 'Sélectionne un thème'
 	                    }
 	                }
 	            }
 	        }
 	    });
 	});
-
 </script>

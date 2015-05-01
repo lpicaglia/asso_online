@@ -10,6 +10,7 @@
 	$domaines 	= getDomaines();
 	$themes		= getThemes();
 
+	$views[] = "topbar";
 	$views[] = "form_registration";
 	$views[] = "speedSearch";
 

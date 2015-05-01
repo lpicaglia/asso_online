@@ -19,11 +19,6 @@
     </head>
 
     <body>
-
-        <header>
-            <?php require_once("view/v_topbar.php"); ?>
-        </header>
-
         <div class="container">
             <div class="row">
                 

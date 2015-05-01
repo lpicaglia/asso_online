@@ -9,7 +9,7 @@
 					<input type="text" class="form-control input" placeholder="Nom ou activité"/>
 				</div>
 						
-				<div class="form-group centreBtn">
+				<div class="form-group" align="center">
 					<button class="btn btn-primary" type="submit">Rechercher</button>
 				</div>
 			</form>

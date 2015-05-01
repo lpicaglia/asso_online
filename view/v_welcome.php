@@ -8,7 +8,7 @@
             <li>Inscris ton association.</li>
             <li>Suis l'actualité des associations de Bordeaux.</li>
         </ul>
-        <div class="centreBtn">
+        <div align="center">
             <button class="btn btn-primary" type="submit">Actu des assos</button>
         </div>
     </div>

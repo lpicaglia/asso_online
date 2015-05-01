@@ -31,7 +31,7 @@ class PdoSio{
     /* TO USE ACTION REQUEST
     * Example:  
     * $pdo = PdoSio::getPdoSio();
-    * $pdo->requestAction("DELETE FROM photo WERE id_user = $idInput");
+    * $pdo->actionRequest("DELETE FROM photo WERE id_user = $idInput");
     *
     */
     public function actionRequest($request){
@@ -61,7 +61,7 @@ class PdoSio{
     /* TO USE SELECTION REQUEST
     * Example:  
     * $pdo = PdoSio::getPdoSio();
-    * $resultats = $pdo->requestSelection("SELECT id_user FROM user WHERE identifiant ='toto'");
+    * $resultats = $pdo->selectRequest("SELECT id_user FROM user WHERE identifiant ='toto'");
     * if ($resultats) {
     *   $idInput = $resultats[0]['id_user'];
     *   echo "idInput";
