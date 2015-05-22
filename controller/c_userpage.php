@@ -1,7 +1,6 @@
 <?php
 	session_start();
 
-	require_once('model/PDO.php');
 	require_once('model/m_association.php');
 	require_once("model/m_news.php");
 

@@ -1,4 +1,5 @@
 <?php
+	require_once('model/PDO.php');
 
 	function connexion($username, $password){
 		$pdo = PdoSio::getPdoSio();

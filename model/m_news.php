@@ -9,4 +9,12 @@
 	    $nb = $pdo->selectRequest($request);
 		return $nb_news[0]['COUNT(*)'];
 	}
+
+	function ajouterNews($title, $content){
+		
+		$values[0] = 
+		$pdo = PdoSio::getPdoSio();
+
+
+	}
 ?>

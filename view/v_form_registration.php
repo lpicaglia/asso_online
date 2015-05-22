@@ -7,9 +7,9 @@
 <script src="js/bootstrapValidator.min.js"></script>
 <script src="js/fr_FR.js"></script>
 
-<div class="col-md-9">
-	<form action="valid_registration" method="post" id="form_registration" enctype="multipart/form-data">		
-
+<div class="col-md-9">	
+	<form action="" method="post" id="form_registration" enctype="multipart/form-data">
+			<input type="hidden" name="page" value="valid_registration" />
 			<div class="form-group registration col-md-6 col-md-offset-3">
 				<label>Importer une image représentative de votre association</label>
 				<input 	id 					= "logo" 
@@ -211,7 +211,7 @@
 			<div class="col-md-12" align="right">
 				<i>* Champs obligatoire</i>
 			</div>
-		
+
 	</form>
 </div>
 

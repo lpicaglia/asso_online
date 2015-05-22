@@ -8,7 +8,8 @@
 			<h3 class="panel-title">Inscription (gratuite)</h3>
 		</div>
 		<div class="panel-body">
-			<form action="registration" id="registration" method="post">
+			<form action="" id="registration" method="post">
+				<input type="hidden" name="page" value="registration" />
 				<div class="form-group">
 					<input type="text" class="form-control" name="name" placeholder="Nom de l'asso" required/>
 				</div>
