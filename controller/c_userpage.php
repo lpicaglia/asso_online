@@ -33,8 +33,5 @@
 
 	$views[] = "speedSearch";
 	
-	echo 'controller = userpage / ';
-	echo $_SESSION['id_asso'];
-	
 	require_once("view/v_mainpage.php");
 ?>

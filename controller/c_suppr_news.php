@@ -14,8 +14,5 @@
 	$views[] 	= "userpage";
 	$views[] 	= "speedSearch";
 	
-	echo 'controller = suppr_news / ';
-	echo $_SESSION['id_asso'];
-	
 	require_once("view/v_mainpage.php");
 ?>

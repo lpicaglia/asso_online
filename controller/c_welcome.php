@@ -21,8 +21,5 @@
 		$views[] = "speedSearch";	
 	}
 
-	echo 'controller = welcome / ';
-	var_dump($_SESSION['id_asso']);
-
 	require_once("view/v_mainpage.php");
 ?>
