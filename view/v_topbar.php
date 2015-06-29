@@ -18,7 +18,9 @@
 			?>
 
 			<div class="btn-group">
-				<img class="logo_top" class="img-responsive" src="<?= $asso['logo_asso']; ?>" alt="<?= $asso['nom_asso']; ?>">
+				<a href="" onClick="main.submit();">
+					<img class="logo_top" class="img-responsive" src="<?= $asso['logo_asso']; ?>" alt="<?= $asso['nom_asso']; ?>">
+				</a>
 				<button type="button" class="btn btn-default btn-sm dropdown-toggle menu_logo_top" data-toggle="dropdown" aria-expanded="false">
 					Menu
 					<span class="caret">
@@ -32,6 +34,10 @@
 					</li>
 				</ul>
 			</div>
+
+			<form action="" method="post" name="main">
+				<input type="hidden" name="page" value="main" />
+			</form>
 
 			<form action="" method="post" name="profil">
 				<input type="hidden" name="page" value="profil" />

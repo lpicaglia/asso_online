@@ -46,6 +46,7 @@ class PdoSio{
     * $pdo->insertRequest('toto', $value);
     *
     */
+
     public function insertRequest($table, $values){
         $request = 'INSERT INTO ' . $table . ' VALUES (';
         for ($i = 0 ; $i < count($values);  $i++) {

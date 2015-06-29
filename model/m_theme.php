@@ -7,4 +7,11 @@
 		$res = $pdo->selectRequest($request);
 		return $res;
 	}
+
+	function getDomaineTheme($idTheme){
+		$pdo = PdoSio::getPdoSio();
+		$request = "SELECT id_domaine FROM theme WHERE id_theme = ".$idTheme.";";
+		$res = $pdo->selectRequest($request);
+		return $res;	
+	}
 ?>

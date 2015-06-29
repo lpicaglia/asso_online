@@ -47,7 +47,7 @@
 					<button type="button" class="btn btn-sm" data-toggle="modal" data-target="#modalModif">
 	  					Modifier
 					</button>
-					<button type="button" class="btn btn-sm">
+					<button type="button" class="btn btn-sm" data-toggle="modal" data-target="#modalSuppr">
 	  					Supprimer
 					</button>
 				<?php
@@ -58,17 +58,23 @@
 			<div class="modal fade" id="modalModif" tabindex="-1" role="dialog" aria-labelledby="Modifier une news">
 				<div class="modal-dialog" role="document">
 			    	<div class="modal-content">
-			      		<div class="modal-header">
-			        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			      			<h4 class="modal-title">Modification de la news</h4>
-			      		</div>
-			      		<div class="modal-body">
-			      			<textarea name="modifNews" class="areaModal" rows="3"><?= $news['lib_news']?></textarea>
-			      		</div>
-			      		<div class="modal-footer">
-			        		<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-			        		<button type="button" class="btn btn-primary">Modifier</button>
-			      		</div>
+						<form action="" method="post" name="modif_news">
+				      		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				      			<h4 class="modal-title">Modification de la news</h4>
+				      		</div>
+				      		
+				      		<div class="modal-body">
+				      			<textarea name="modifNews" class="areaModal" rows="3"><?= $news['lib_news']?></textarea>
+				      		</div>
+				      		
+				      		<div class="modal-footer">
+				        		<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+								<button type="submit" class="btn btn-primary">Modifier</button>
+								<input type="hidden" name="page" value="modif_news" />
+								<input type="hidden" name="idNews" value="<?= $news['id_news']; ?>" />
+			      			</div>
+			      		</form>
 			    	</div>
 			  	</div>
 			</div>
@@ -93,7 +99,27 @@
 			  	</div>
 			</div>
 
-			<input type="hidden" name="idNews" value="<?= $news['id_news']; ?>" />
+			<div class="modal fade" id="modalSuppr" tabindex="-1" role="dialog" aria-labelledby="Supprimer une news">
+				<div class="modal-dialog" role="document">
+			    	<div class="modal-content">
+			    		<form action="" method="post" name="suppr_news">
+				      		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				      			<h4 class="modal-title">Supprimer la news</h4>
+				      		</div>
+				      		<div class="modal-body">
+				      			<p>Est-tu sur de vouloir supprimer cette news ?</p>
+				      		</div>
+				      		<div class="modal-footer">
+				        		<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+				        		<button type="submit" class="btn btn-primary">Supprimer</button>
+				        		<input type="hidden" name="page" value="suppr_news" />
+								<input type="hidden" name="idNews" value="<?= $news['id_news']; ?>" />
+				      		</div>
+				      	</form>
+			    	</div>
+			  	</div>
+			</div>
   		</div>
 
 		<?php
