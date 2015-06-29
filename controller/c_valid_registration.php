@@ -1,6 +1,6 @@
 <?php
-	require_once('model/PDO.php');
 	require_once('model/m_association.php');
+	require_once('model/m_news.php');
 
 	$form 		= array();
 	$views		= array();
@@ -49,6 +49,7 @@
 				if(!empty($_SESSION['id_asso'])){
 					$asso = getIdCardInfo($_SESSION['id_asso']);
 					$views[] = 'id_card';
+					$views[] = 'userpage';
 					$views[] = 'valid_registration';
 				}
 				else{
@@ -69,6 +70,9 @@
 	}
 
 	$views[] = 'speedSearch';
+	
+	echo 'controller = valid_registration / ';
+	var_dump($_SESSION['id_asso']);
 
 	require_once('view/v_mainpage.php');
 ?>

@@ -187,7 +187,6 @@ header, body{
 
 .logo_top{
   display:block;  
-  width:100%;
   height:75px;
   padding-top: 5px;
 }
@@ -200,9 +199,28 @@ header, body{
  * Saisie d'une news
  */
 
-.areaNews{
-  width:100%;
+.panel-add-news{
+  padding: 10px;
 }
+
+.panel-add-news textarea{
+  width:100%;
+  margin-bottom: 5px; 
+}
+
+/*
+ *  Affichage des news
+  */
+.panel-news img{
+  display:inline;  
+  height:30px;
+}
+
+.areaModal{
+  width:100%;
+  margin-bottom: 5px;
+}
+
 
 /* ==========================================================================
    Helper classes

@@ -25,13 +25,18 @@
 				</button>
 				<ul class="dropdown-menu" role="menu">
 					<li>
-						<a href="#">Profil</a>
+						<a href="" onClick="profil.submit();">Profil</a>
 					</li>
 					<li>
-					    	<a href="" onClick="disconnect.submit();">Déconnexion</a>
+					    <a href="" onClick="disconnect.submit();">Déconnexion</a>
 					</li>
 				</ul>
 			</div>
+
+			<form action="" method="post" name="profil">
+				<input type="hidden" name="page" value="profil" />
+			</form>
+
 			<form action="" method="post" name="disconnect">
 				<input type="hidden" name="page" value="disconnect" />
 			</form>

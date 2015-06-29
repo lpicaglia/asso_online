@@ -82,7 +82,7 @@
 			</div>
 
 			<div class="form-group col-md-12 col-md-offset-3">
-				<label for="adr2">Complément d'dresse</label>
+				<label for="adr2">Complément d'adresse</label>
 				<input 	id 			= "adr2" 
 						name 		= "adr2" 
 						type 		= "text" 
@@ -91,7 +91,7 @@
 			</div>
 
 			<div class="form-group col-md-12 col-md-offset-3">
-				<label for="cp">Code postale</label>
+				<label for="cp">Code postal</label>
 				<input 	id 			= "cp" 
 						name 		= "cp"
 						type 		= "text" 
