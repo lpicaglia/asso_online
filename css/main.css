@@ -211,7 +211,7 @@ header, body{
 /*
  *  Affichage des news
   */
-.panel-news img{
+.panelNews img{
   display:inline;  
   height:30px;
 }
@@ -221,6 +221,14 @@ header, body{
   margin-bottom: 5px;
 }
 
+/*
+ *  En-tete des news
+  */
+.headerNews{
+  width: 70%;
+  text-align: left;
+  float: left;
+}
 
 /* ==========================================================================
    Helper classes

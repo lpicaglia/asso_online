@@ -18,6 +18,7 @@ if(isset($_POST['page'])){
 	elseif($controller == 'modif_news'){require('controller/c_modif_news.php');}
 	elseif($controller == 'suppr_news'){require('controller/c_suppr_news.php');}
 	elseif($controller == 'allNews'){require('controller/c_userpage.php');}
+	elseif($controller == 'comNews'){require('controller/c_com_news.php');}
 	else{header('location:404.html');}
 } else {
 	//Si on ne spécifie pas de controller, on ouvre la page de présentation

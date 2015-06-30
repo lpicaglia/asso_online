@@ -12,6 +12,7 @@
 		$asso = getIdCardInfo($_SESSION['id_asso']);
 		$views[] = "id_card";
 		$views[] = "userpage";
+		$views[] = "speedSearch";
 	}
 	else{
 		if(isset($_POST['page'])){
@@ -23,6 +24,7 @@
 					$asso = getIdCardInfo($_SESSION['id_asso']);
 					$views[] = "id_card";
 					$views[] = "userpage";
+					$views[] = "speedSearch";
 				}
 				else{
 					$views[] = "error_connexion";	
@@ -31,14 +33,16 @@
 			}
 			elseif($_POST['page'] == 'allNews'){
 				$views[] = "userpage";
+				$views[] = "speedSearch";
+				$views[] = "registration";
 			}
 			else{
 				$views[] = "error_connexion";
+				$views[] = "speedSearch";
+				$views[] = "registration";
 			}
 		}
 	}
-
-	$views[] = "speedSearch";
 
 	require_once("view/v_mainpage.php");
 ?>
