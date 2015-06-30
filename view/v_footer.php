@@ -21,7 +21,7 @@
     	</tr>
 
     	<tr>
-    		<td colspan="2" style="text-align: right;"><i>&copy; Asso-Online.fr, 2015</i></td>
+    		<td colspan="2" style="text-align: right;"><i>Asso-Online.fr, 2015</i></td>
     	</tr>
     </table>
 </div>

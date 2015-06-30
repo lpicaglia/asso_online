@@ -9,7 +9,10 @@
             <li>Suis l'actualité des associations de Bordeaux.</li>
         </ul>
         <div align="center">
-            <button class="btn btn-primary" type="submit">Actu des assos</button>
+            <form action="" method="post" name="allNews">
+                <input type="submit" class="btn btn-primary" value="Actu des assos"/>
+                <input type="hidden" name="page" value="allNews" />
+            </form>
         </div>
     </div>
 </div>

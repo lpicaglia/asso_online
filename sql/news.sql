@@ -2,5 +2,5 @@ CREATE TABLE news(id_news INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 				  lib_news TEXT,
 				  id_asso INT NOT NULL,
 				  maj_news TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-				  date_news TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+				  date_news TIMESTAMP,
 				  CONSTRAINT fk_newsAsso FOREIGN KEY(id_asso) REFERENCES association(id_asso));

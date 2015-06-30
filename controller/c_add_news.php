@@ -11,15 +11,10 @@
 		$valuesNews[] = '';
 		$valuesNews[] = $_POST['contentNews'];
 		$valuesNews[] = $_SESSION['id_asso'];
-		$valuesNews[] = '';
+		$valuesNews[] = date("Y-m-d H:i:s");
 		$valuesNews[] = date("Y-m-d H:i:s");
 
-		if(setNews($valuesNews) != 0){
-			echo 'News ajouter avec succes ';
-		}
-		else{
-			echo '/!\ News non ajouter /!\\';
-		}
+		setNews($valuesNews);
 	}
 
 	$asso = getIdCardInfo($_SESSION['id_asso']);
